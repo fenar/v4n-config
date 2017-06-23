@@ -14,11 +14,7 @@ ob_number=`hostname | cut -c 10- -`
 MAAS_URL=http://172.27.${ob_number}.1/MAAS
 CLUSTER_UUID=`grep cluster_uuid /etc/maas/rackd.conf |awk '{print $2}'`
 
-#AMT Password set
-AMT_PASSWORD=Password1+
-
 #Set ip's for MAAS configuration
-router_ip=172.27.`expr ${ob_number} + 1`.254
 dhcp_low=172.27.`expr ${ob_number} + 1`.1
 dhcp_high=172.27.`expr ${ob_number} + 1`.20
 dns_ip=172.27.`expr ${ob_number} + 1`.254

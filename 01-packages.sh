@@ -67,9 +67,6 @@ do
          p)
              set_up_ppas ppaset
              ;;
-         v)
-             VERBOSE=1
-             ;;
          ?)
              usage
              exit

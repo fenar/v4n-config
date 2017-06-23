@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 # script to configure apache
 #
 set -e

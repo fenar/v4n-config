@@ -13,10 +13,6 @@ ob_number=`hostname | cut -c 10- -`
 
 # Ensure the MAAS URL and CLUSTER UUID are set correctly
 MAAS_URL=http://172.27.${ob_number}.1/MAAS
-CLUSTER_UUID=`grep cluster_uuid /etc/maas/rackd.conf |awk '{print $2}'`
-
-# AMT Password set
-AMT_PASSWORD=Password1+
 
 # set apikey variable
 apikey=`maas-region apikey --username admin | tail -n1`

@@ -16,8 +16,6 @@ fi
 # Set the network subnet variables
 #
 PLUS1=`expr $OB + 1`
-PLUS2=`expr $OB + 2`
-PLUS3=`expr $OB + 3`
 
 #Restore baseline backup
 echo "Restoring baseline backup for OrangeBox$OB...switch will reboot..."

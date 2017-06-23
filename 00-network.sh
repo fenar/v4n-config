@@ -28,7 +28,7 @@ do
    echo "Interface read $inter_face"
    interface=("${interface[@]}" "$inter_face")
 done
-echo "Interfaces assigned "${interface[@]}""
+echo "Interfaces assigned ${interface[@]}"
 
 # Check to make sure the OrangeBox is divisable by 4 to ensure the network is setup correctly
 #
@@ -53,7 +53,6 @@ check_orangebox_number ${obnum}
 internal1_ip="172.27.$((orangebox_number)).1"
 gateway1_ip=172.27.$((orangebox_number+1)).254
 internal2_ip=172.27.$((orangebox_number+2)).1
-gateway2_ip=172.27.$((orangebox_number+3)).254
 gateway_ip=$gateway1_ip
 
 # Set up the nic variables

@@ -5,9 +5,7 @@ trap 'echo Error at about $LINENO' ERR
 . /etc/orange-box.conf
 
 # Set network variables
-external_ip="172.27.252.${orangebox_number}"
 internal_ip="172.27.${orangebox_number}.1"
-internal_network="172.27.${orangebox_number}.0"
 
 # If user is not root then exit
 if [ "$(id -u)" != "0" ]; then
