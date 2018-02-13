@@ -44,7 +44,7 @@ maas admin tags create name=physical || true
 maas admin tags create name=use-fastpath-installer || true
 
 #Get the system id of each node
-system_id=$(maas admin nodes read mac_address=$mac | grep system_id | head -n 1| cut -d'"' -f4)
+system_id=$(maas admin nodes read mac_address=$mac | grep system_id | head -n 1 | cut -d'"' -f4)
 echo $system_id
 
 #Assign tags to each node
