@@ -30,7 +30,6 @@ tgt
 iftop
 nload
 traceroute
-python-openstackclient
 htop
 # automate USB-serial operations
 expect
