@@ -34,3 +34,4 @@ htop
 # automate USB-serial operations
 expect
 picocom
+minicom
